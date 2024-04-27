@@ -4,7 +4,7 @@ import Header from "../../Components/Header/Header";
 const Track = () => {
   return (
     <>
-      <Header />
+      <Header currentPage={"track"} />
       <p>this is the track page</p>
     </>
   );

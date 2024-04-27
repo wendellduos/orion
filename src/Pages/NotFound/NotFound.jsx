@@ -1,9 +1,16 @@
 import "./NotFound.css";
+import Header from "../../Components/Header/Header";
 
 const NotFound = () => {
   return (
     <>
-      <p>this is the not found page</p>
+      <Header currentPage={"not-found"} />
+      <main className="NotFound-main">
+        <h2 className="monospace bold emoticon">(╥﹏╥)</h2>
+        <p className="monospace">
+          <span className="bold">404</span> - Página não encontrada.
+        </p>
+      </main>
     </>
   );
 };
