@@ -1,9 +1,10 @@
 import "./Broadcast.css";
+import Header from "../../Components/Header/Header";
 
 const Broadcast = () => {
   return (
     <>
-      <p>this is the broadcast page</p>
+      <Header currentPage={"broadcast"} />
     </>
   );
 };
