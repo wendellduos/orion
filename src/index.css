@@ -30,6 +30,9 @@
 
 body {
   background-color: var(--gray-l);
+  background-image: radial-gradient(var(--gray) 2px, transparent 2px);
+  background-size: 2.5rem 2.5rem;
+  background-position: center;
 }
 
 .monospace {

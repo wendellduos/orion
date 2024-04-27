@@ -39,12 +39,3 @@ nav > a > span {
   text-transform: uppercase;
   line-height: 0.45rem;
 }
-
-.current-page {
-  background-color: var(--blue);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.current-page * {
-  color: white;
-}
