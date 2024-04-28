@@ -10,9 +10,29 @@
 }
 
 .Track-main .details-wrp .details-body {
+  display: flex;
+  align-items: center;
   width: calc(100% - 1rem);
   height: calc(100% - 1rem);
   border-radius: 10px;
   background-color: white;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.Track-main .left-block {
+  width: calc(75% - 2px);
+  height: 100%;
+}
+
+.Track-main .right-block {
+  width: 25%;
+  height: 100%;
+}
+
+.Track-main .block-separator {
+  width: 2px;
+  height: 75%;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--gray);
 }

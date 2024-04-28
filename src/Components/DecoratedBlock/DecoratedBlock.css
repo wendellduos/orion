@@ -1,0 +1,27 @@
+.DecoratedBlock {
+  position: relative;
+  width: calc(100% - 1rem);
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1.5rem 1rem 1rem 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+.DecoratedBlock .inline-deco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  background-image: linear-gradient(
+    -70deg,
+    var(--blue-dd) 5%,
+    var(--blue-d) 5%,
+    var(--blue-d) 10%,
+    var(--blue) 10%,
+    var(--blue) 15%,
+    var(--blue-l) 15%
+  );
+}

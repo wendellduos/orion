@@ -4,7 +4,7 @@ import { MapContainer, Marker, Polyline, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { useRef } from "react";
-import dotMarkerIcon from "./icons/dot-marker.png";
+import dotMarkerIcon from "./icons/dot-marker-white.png";
 import locationMarkerIcon from "./icons/marker.png";
 
 const Track = () => {
@@ -29,11 +29,11 @@ const Track = () => {
   });
 
   const path = [
-    [-26.339316, -48.841376],
-    [-26.335705, -48.841676],
-    [-26.331713, -48.841839],
-    [-26.326475, -48.842118],
-    [-26.323077, -48.842281],
+    [-26.339316, -48.841376, 13],
+    [-26.335705, -48.841676, 45],
+    [-26.331713, -48.841839, 57],
+    [-26.326475, -48.842118, 71],
+    [-26.323077, -48.842281, 62],
   ];
 
   return (
@@ -50,8 +50,8 @@ const Track = () => {
           }}
         >
           <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url={tiles}
+            attribution='&copy; <a href="https://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy;JawgMaps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url={tempTiles}
           />
           <Polyline
             pathOptions={{ color: "var(--blue-l)", weight: 7 }}
@@ -66,7 +66,11 @@ const Track = () => {
           />
         </MapContainer>
         <div className="details-wrp">
-          <div className="details-body"></div>
+          <div className="details-body">
+            <div className="left-block"></div>
+            <hr className="block-separator" />
+            <div className="right-block"></div>
+          </div>
         </div>
       </main>
     </>

@@ -1,0 +1,41 @@
+#speed-timeline {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  margin-top: 0.5rem;
+}
+
+#speed-labels {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0.3rem;
+  border-left: solid 1px var(--gray-d);
+}
+
+#time-labels {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.3rem;
+  width: 100%;
+  border-bottom: solid 1px var(--gray-d);
+}
+
+#speed-labels > small,
+#time-labels > small {
+  color: var(--gray-d);
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+.speed-point {
+  position: absolute;
+  right: 0;
+}
