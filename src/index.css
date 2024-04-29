@@ -48,11 +48,13 @@ body {
 
 .title {
   font-weight: 600;
+  font-size: 1.7rem;
   line-height: 3rem;
+  text-align: center;
 }
 
 .mini-title {
-  color: var(--gray-d);
+  color: var(--blue-dd);
   font-size: 1rem;
   text-transform: uppercase;
 }

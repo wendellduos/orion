@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 10rem;
-  margin-top: 0.5rem;
+  margin-block: 0.5rem;
 }
 
 #speed-labels {
@@ -71,4 +71,30 @@
 
 .speed-point:hover .speed-tooltip {
   opacity: 1;
+}
+
+.preview-map-wrp {
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin-block: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: var(--gray-l);
+  background-image: url("/public/assets/icons/map-marker.svg");
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.open-on-gmaps {
+  display: block;
+  width: 100%;
+  padding-block: 0.8rem;
+  border-radius: 0.3rem;
+  background-color: var(--blue);
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
 }
