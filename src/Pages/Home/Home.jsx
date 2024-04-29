@@ -3,7 +3,7 @@ import Header from "../../Components/Header/Header";
 import DecoratedBlock from "../../Components/DecoratedBlock/DecoratedBlock";
 
 const Home = () => {
-  const speedHistory = [0, 10, 20, 30, 60];
+  const speedHistory = [0, 39, 31, 100, 63, 57];
 
   return (
     <>
@@ -13,16 +13,26 @@ const Home = () => {
         <h3 className="mini-title">Histórico de velocidade</h3>
         <div id="speed-timeline">
           <div id="speed-labels">
-            <small>100km/h</small>
-            <small>0km/h</small>
+            <small>VELOCIDADE</small>
           </div>
           <div id="time-labels">
             <small>TEMPO</small>
           </div>
-          {speedHistory.map((speed) => {
+          {speedHistory.map((speed, index) => {
             return (
-              <div className="speed-point" style={{ bottom: `${speed}%` }}>
-                .
+              <div
+                className="speed-point"
+                key={index}
+                style={{
+                  left: `${index * 19.7}%`,
+                  height: `${speed}%`,
+                }}
+              >
+                <img
+                  src="/assets/img/dot-marker.png"
+                  alt="icone de marcação da velocidade"
+                />
+                <div className="speed-tooltip">{speed}</div>
               </div>
             );
           })}

@@ -26,6 +26,7 @@
   padding: 0.3rem;
   width: 100%;
   border-bottom: solid 1px var(--gray-d);
+  z-index: 1;
 }
 
 #speed-labels > small,
@@ -37,5 +38,37 @@
 
 .speed-point {
   position: absolute;
-  right: 0;
+  bottom: 0;
+  width: 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: var(--blue-l);
+}
+
+.speed-point > img {
+  position: absolute;
+  top: -0.5rem;
+  left: -0.35rem;
+  height: 1rem;
+}
+
+.speed-tooltip {
+  position: absolute;
+  top: -2.5rem;
+  left: -0.85rem;
+  width: 2rem;
+  padding-block: 0.2rem;
+  border-radius: 3px;
+  background-color: var(--blue);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-align: center;
+  user-select: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+.speed-point:hover .speed-tooltip {
+  opacity: 1;
 }

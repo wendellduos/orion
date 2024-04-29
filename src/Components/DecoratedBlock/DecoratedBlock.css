@@ -7,6 +7,7 @@
   border-radius: 0.5rem;
   background-color: white;
   overflow: hidden;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.05);
 }
 
 .DecoratedBlock .inline-deco {
