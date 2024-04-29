@@ -97,4 +97,10 @@
   color: white;
   text-decoration: none;
   text-align: center;
+  transition: 0.2s background-color ease-out;
+}
+
+.open-on-gmaps:hover {
+  background-color: var(--blue-d);
+  cursor: pointer;
 }
