@@ -2,6 +2,8 @@ import "./Home.css";
 import Header from "../../Components/Header/Header";
 import DecoratedBlock from "../../Components/DecoratedBlock/DecoratedBlock";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import L from "leaflet";
 import { useState } from "react";
 
 const Home = () => {
@@ -10,6 +12,12 @@ const Home = () => {
   const [latestCoords, setLatestCoords] = useState({
     lat: -26.301581,
     lng: -48.846323,
+  });
+
+  const marker = new L.Icon({
+    iconUrl: process.env.PUBLIC_URL + "/assets/img/marker-dark.png",
+    iconSize: new L.Point(40, 50),
+    iconAnchor: new L.Point(20, 50),
   });
 
   const handleInsertSpeedPoint = (speed) => {
@@ -76,6 +84,10 @@ const Home = () => {
             <TileLayer
               attribution='<a href="https://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy;JawgMaps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://tile.jawg.io/jawg-lagoon/{z}/{x}/{y}{r}.png?access-token=X0Pc7SpgNT4B4xu7nQMaXHYusv0CrKZSwG0KBCJH7zNkg6rz4i30t4dzoNMa4Ajd"
+            />
+            <Marker
+              icon={marker}
+              position={[latestCoords.lat, latestCoords.lng]}
             />
           </MapContainer>
         </div>
