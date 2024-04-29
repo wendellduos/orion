@@ -38,3 +38,72 @@ header .dropdown-toggle-btn .user-icon {
 header .dropdown-toggle-btn .burger-menu-icon {
   height: 1rem;
 }
+
+.dropdown {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 20rem;
+  border-radius: 0.3rem;
+  background-color: white;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+
+.dd-username {
+  padding-block: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--gray-d);
+}
+
+.dropdown > p {
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.dd-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--gray-d);
+}
+
+.dd-link > img {
+  height: 1rem;
+}
+
+.dd-link:hover {
+  background-color: var(--gray-l);
+}
+
+.dd-credits {
+  padding: 0.7rem;
+  display: block;
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--gray-d);
+}
+
+.dd-credits::after {
+  content: "";
+  display: inline-block;
+  height: 0.5rem;
+  margin-left: 0.3rem;
+  aspect-ratio: 1/1;
+  background-image: url("/public/assets/icons/link.svg");
+  background-size: 100%;
+}
+
+.dd-toggle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+}
