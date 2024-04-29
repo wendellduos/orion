@@ -1,0 +1,63 @@
+.login-h1 {
+  text-align: center;
+}
+
+.login-logo {
+  width: 10rem;
+}
+
+.login-txt {
+  color: var(--gray-d);
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.login-form > input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  outline: solid 2px transparent;
+  border-radius: 0.3rem;
+  background-color: var(--gray-l);
+  font-size: 1rem;
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.05);
+  transition: outline 0.2s ease-out;
+}
+
+.login-form > input:focus {
+  outline: solid 2px var(--blue);
+}
+
+.login-form > input:-webkit-autofill,
+.login-form > input:-webkit-autofill:hover,
+.login-form > input:-webkit-autofill:focus,
+.login-form > input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  transition-delay: 5000s;
+}
+
+.login-btn {
+  width: 100%;
+  padding-block: 0.8rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: var(--blue);
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  transition: 0.2s background-color ease-out;
+}
+
+.login-btn:hover {
+  background-color: var(--blue-d);
+  cursor: pointer;
+}
